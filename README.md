@@ -2,9 +2,6 @@
 
 A simple FastAPI authentication service featuring user registration, Argon2 password hashing, JWT token issue/verification, and protected profile endpoints.
 
-## Requirements
-- Python 3.10+
-
 ## Installation & Setup
 
 1. **Clone the repository:**
@@ -45,7 +42,8 @@ A simple FastAPI authentication service featuring user registration, Argon2 pass
    python -m purest -v
    ```
 
-   Test Summary
+## Test Summary
+
    test_password_hash: Passed (Verifies password hashing & checking via Argon2)
    test_login_and_profile: Passed (Tests registration, login, and token-based profile retrieval)
    test_profile_requires_token: Passed (Rejects unauthenticated requests with 401)
