@@ -4,24 +4,18 @@ A simple FastAPI authentication service featuring user registration, Argon2 pass
 
 ## Installation & Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
-   cd week4-auth-api
-   ```
-
-2. Virtual environment
+1. Virtual environment
    ```
    python3 -m venv venv
    source venv/bin/activate
    ```
 
-3. Install requirements
+2. Install requirements
    ```
    pip install -r requirements.txt
    ```
 
-4. Set the JWT Secret'
+3. Set the JWT Secret'
    Generate a safe random 32 character token
    ```
    python -c "import secrets; print(secrets.token_hex(32))"
