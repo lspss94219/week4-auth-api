@@ -37,11 +37,13 @@ A simple FastAPI authentication service featuring user registration, Argon2 pass
    ```
 
 ## Test Summary
+```
+   tests/test_auth.py::test_password_hash PASSED
+   tests/test_auth.py::test_login_and_profile PASSED
+   tests/test_auth.py::test_profile_requires_token PASSED
+   tests/test_auth.py::test_duplicate_registration PASSED
+   tests/test_auth.py::test_wrong_password_login PASSED
+   tests/test_auth.py::test_invalid_registration_data PASSED
 
-   test_password_hash: Passed (Verifies password hashing & checking via Argon2)
-   test_login_and_profile: Passed (Tests registration, login, and token-based profile retrieval)
-   test_profile_requires_token: Passed (Rejects unauthenticated requests with 401)
-   test_duplicate_registration: Passed (Prevents duplicate email registration with 409)
-   test_wrong_password_login: Passed (Rejects wrong credentials with 401)
-   test_invalid_registration_data: Passed (Validates request bodies with 422)
+6 passed in 0.43s
    
